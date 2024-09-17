@@ -1,4 +1,6 @@
+import React from 'react';
 import localFont from "next/font/local";
+import Navbar from './Navbar';
 import "./globals.css";
 
 const geistSans = localFont({
@@ -18,9 +20,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const user = { name: 'John Doe' };
+
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
+        <Navbar user={user} />
         {children}
       </body>
     </html>
