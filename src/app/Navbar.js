@@ -11,7 +11,7 @@ const Navbar = ({ user }) => {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
-    router.push('/login');
+    router.push('./login');
   };
 
   return (
@@ -22,7 +22,7 @@ const Navbar = ({ user }) => {
       <nav>
         <ul>
           <li><Link href="/">Home</Link></li>
-          <li><Link href="/contact">Contacto</Link></li>
+          <li><Link href="./contact">Contacto</Link></li>
         </ul>
       </nav>
       {isLoggedIn && (

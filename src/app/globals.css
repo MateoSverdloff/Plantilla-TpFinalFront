@@ -263,6 +263,13 @@ main {
     transition: opacity 0.3s ease-in;
   }
 
+  .contact{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #ffffff;
+  }
+
 .material-symbols-outlined {
   vertical-align: middle;
 }
@@ -273,7 +280,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 0px 10px;
   background-color: #333;
   color: white;
 }
